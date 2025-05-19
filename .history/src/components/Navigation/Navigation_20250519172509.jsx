@@ -13,27 +13,26 @@ const myFont = localFont({
 })
 import { useSearchParams } from 'next/navigation'
 
-export default function Navigation({ children, scroll, setScroll, lenis }) {
-	const [bottomIsOpen, setBottomIsOpen] = useState(true)
-	const [topIsOpen, setTopIsOpen] = useState(true)
+export default function Navigation({
+	children,
+	scroll,
+	setScroll,
+	lenis,
+	isOpen = false,
+}) {
+	const [bottomIsOpen, setBottomIsOpen] = useState(isOpen)
+	const [topIsOpen, setTopIsOpen] = useState(isOpen)
 	const pathname = usePathname()
 	const imageRef = useRef(null)
 	const textRef = useRef(null)
 	const searchParams = useSearchParams()
 	useEffect(() => {
-		// Add a small delay to ensure the page is fully loaded
-		const timer = setTimeout(() => {
-			console.log(
-				'Checking params after delay:',
-				searchParams.get('drawersOpen')
-			)
-			if (searchParams.get('drawersOpen') === 'true') {
-				setBottomIsOpen(true)
-				// setTopIsOpen(true)
-			}
-		}, 300) // 300ms delay
-
-		return () => clearTimeout(timer)
+		if (searchParams.get('drawersOpen') === 'true') {
+			setBottomIsOpen(true)
+			setTopIsOpen(true)
+			setScroll(true)
+		}
+		// }, 300) // 300ms delay
 	}, [searchParams])
 
 	const handleBackClick = () => {

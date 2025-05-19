@@ -18,7 +18,7 @@ export default function Navigation({
 	scroll,
 	setScroll,
 	lenis,
-	isOpen = true,
+	isOpen = false,
 }) {
 	const [bottomIsOpen, setBottomIsOpen] = useState(isOpen)
 	const [topIsOpen, setTopIsOpen] = useState(isOpen)

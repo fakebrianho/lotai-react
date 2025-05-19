@@ -13,21 +13,5 @@ async function getData() {
 
 export default async function Home() {
 	const { items } = await getData()
-	return (
-		<main>
-			{items.map((item) => (
-				<div key={item.id}>
-					{/* Replace these with your actual field names from Prismic */}
-					<h2>{item.data.testtext[0].text}</h2>
-					{item.data.image && (
-						<img
-							src={item.data.image.url}
-							alt={item.data.image.alt || ''}
-						/>
-					)}
-					<PrismicRichText field={item.data.testtext} />
-				</div>
-			))}
-		</main>
-	)
+	return <main></main>
 }
