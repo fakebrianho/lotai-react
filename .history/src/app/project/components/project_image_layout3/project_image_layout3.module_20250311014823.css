@@ -1,0 +1,30 @@
+.container {
+	width: 75vw;
+	margin: 0 auto;
+}
+.top {
+	width: 100%;
+	margin-top: 2em;
+}
+.top img {
+	border-radius: 10px;
+	object-fit: cover;
+}
+.bottom {
+	display: flex;
+	margin-top: 0.5rem;
+	width: 100%;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.bottom img:nth-child(1) {
+	width: 59.5%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.bottom img:nth-child(2) {
+	width: 40%;
+	object-fit: cover;
+	border-radius: 10px;
+}

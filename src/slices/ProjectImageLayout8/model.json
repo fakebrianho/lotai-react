@@ -1,0 +1,35 @@
+{
+  "id": "project_image_layout8",
+  "type": "SharedSlice",
+  "name": "ProjectImageLayout8",
+  "description": "ProjectImageLayout8",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image1": {
+          "type": "Image",
+          "config": {
+            "label": "image1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image2": {
+          "type": "Image",
+          "config": {
+            "label": "image2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

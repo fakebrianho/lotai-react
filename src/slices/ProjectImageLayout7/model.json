@@ -1,0 +1,98 @@
+{
+  "id": "project_image_layout7",
+  "type": "SharedSlice",
+  "name": "ProjectImageLayout7",
+  "description": "ProjectImageLayout7",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image1": {
+          "type": "Image",
+          "config": {
+            "label": "image1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image2": {
+          "type": "Image",
+          "config": {
+            "label": "image2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image3",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image4": {
+          "type": "Image",
+          "config": {
+            "label": "image4",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image5": {
+          "type": "Image",
+          "config": {
+            "label": "image5",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image6": {
+          "type": "Image",
+          "config": {
+            "label": "image6",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image7": {
+          "type": "Image",
+          "config": {
+            "label": "image7",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image8": {
+          "type": "Image",
+          "config": {
+            "label": "image8",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image9": {
+          "type": "Image",
+          "config": {
+            "label": "image9",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "media": {
+          "type": "Embed",
+          "config": {
+            "label": "media",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

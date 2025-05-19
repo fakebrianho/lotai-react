@@ -1,0 +1,6 @@
+.container {
+	width: 66%;
+}
+.container img {
+	object-fit: cover;
+}

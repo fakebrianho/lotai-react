@@ -1,0 +1,22 @@
+.container {
+	display: flex;
+	width: 100vw;
+	/* border: 2px solid red; */
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	font-family: textfont;
+}
+.left {
+	width: 50vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.right {
+	width: 50vw;
+}
+.right p {
+	max-width: 75%;
+	margin: auto;
+}

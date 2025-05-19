@@ -1,0 +1,15 @@
+.btn {
+	margin-top: 2em;
+	align-self: flex-start;
+	margin-bottom: 20px;
+}
+.btn:last-child {
+	margin-bottom: 0px;
+}
+.btn i {
+	content: '';
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s var(cubic-bezier(1, 0.49, 0.16, 0.96));
+	background: hsl(0, 0%, 100%);
+}

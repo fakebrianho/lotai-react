@@ -1,0 +1,14 @@
+.container {
+	margin-bottom: 5rem;
+	display: flex;
+	width: 100vw;
+}
+.imgContainer {
+	width: 65%;
+	padding-left: 2.5rem;
+	padding-top: 2.5rem;
+	overflow: hidden;
+}
+
+.textContainer {
+}

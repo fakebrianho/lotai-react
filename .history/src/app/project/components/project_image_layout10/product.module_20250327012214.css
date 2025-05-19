@@ -1,0 +1,14 @@
+.container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+.p10__gridItem {
+	width: 100%;
+	height: 20vh;
+	position: relative;
+	will-change: transform, opacity;
+}

@@ -1,0 +1,8 @@
+.imageContainer {
+	clip-path: ellipse(48% 33% at 49% 42.5%);
+	width: 10vw;
+}
+.imageContainer img {
+	object-fit: cover;
+	width: 100%;
+}

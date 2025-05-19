@@ -1,0 +1,45 @@
+{
+  "id": "sound_layout4",
+  "type": "SharedSlice",
+  "name": "SoundLayout4",
+  "description": "SoundLayout4",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "s_lo4_image_1": {
+          "type": "Image",
+          "config": {
+            "label": "hero",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo4_information": {
+          "type": "Text",
+          "config": {
+            "label": "text",
+            "placeholder": ""
+          }
+        },
+        "s_lo4_link": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

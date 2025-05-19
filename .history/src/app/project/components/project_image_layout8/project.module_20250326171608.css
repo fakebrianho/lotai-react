@@ -1,0 +1,15 @@
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2%;
+}
+.container img:nth-child(1) {
+	width: 48%;
+	object-fit: contain;
+}
+.container img:nth-child(2) {
+	width: 48%;
+	object-fit: contain;
+}

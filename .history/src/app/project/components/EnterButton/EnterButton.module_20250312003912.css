@@ -1,0 +1,67 @@
+.btn {
+	margin-top: 2em;
+	align-self: flex-start;
+	margin-bottom: 20px;
+	--w: 300px;
+	--h: 45px;
+	position: relative;
+	display: flex;
+	width: var(--w);
+	height: var(--h);
+	border: 1px solid hsl(var(--primary));
+	cursor: pointer;
+}
+.btn:last-child {
+	margin-bottom: 0px;
+}
+.btn i {
+	content: '';
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s cubic-bezier(1, 0.49, 0.16, 0.96);
+	background: hsl(0, 0%, 100%);
+}
+.btn i:nth-child(1) {
+	transition-delay: 0.02s;
+}
+.btn i:nth-child(2) {
+	transition-delay: 0.04s;
+}
+.btn i:nth-child(3) {
+	transition-delay: 0.06s;
+}
+.btn i:nth-child(4) {
+	transition-delay: 0.08s;
+}
+.btn i:nth-child(5) {
+	transition-delay: 0.1s;
+}
+.btn i:nth-child(6) {
+	transition-delay: 0.12s;
+}
+.btn i:nth-child(7) {
+	transition-delay: 0.14s;
+}
+.btn i:nth-child(8) {
+	transition-delay: 0.16s;
+}
+.btn i:nth-child(9) {
+	transition-delay: 0.18s;
+}
+.btn i:nth-child(10) {
+	transition-delay: 0.2s;
+}
+.btnSpan {
+	position: absolute;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: var(--h);
+	letter-spacing: 4px;
+	text-align: center;
+	text-transform: uppercase;
+	color: hsl(var(--primary));
+	transition: all 0.4s var(--c);
+	z-index: 100;
+	font-family: subheader;
+}

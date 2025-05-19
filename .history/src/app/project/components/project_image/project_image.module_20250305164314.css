@@ -1,0 +1,9 @@
+.container {
+	border: 2px solid red;
+	width: 75vw;
+	margin: 0 auto;
+	object-fit: cover;
+}
+.container img {
+	width: 100%;
+}

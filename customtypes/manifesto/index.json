@@ -1,0 +1,31 @@
+{
+  "format": "custom",
+  "id": "manifesto",
+  "label": "Manifesto",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "awards": {
+              "type": "SharedSlice"
+            },
+            "biography_block": {
+              "type": "SharedSlice"
+            },
+            "bio": {
+              "type": "SharedSlice"
+            },
+            "hero_slice": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

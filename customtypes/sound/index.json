@@ -1,0 +1,37 @@
+{
+  "format": "custom",
+  "id": "sound",
+  "label": "Sound",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "vimeo": {
+              "type": "SharedSlice"
+            },
+            "sound_layout5": {
+              "type": "SharedSlice"
+            },
+            "sound_layout4": {
+              "type": "SharedSlice"
+            },
+            "sound_layout3": {
+              "type": "SharedSlice"
+            },
+            "sound_layout2": {
+              "type": "SharedSlice"
+            },
+            "sound_layout1": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "vimeo",
+  "type": "SharedSlice",
+  "name": "Vimeo",
+  "description": "Vimeo",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "vimeoURL": {
+          "type": "Link",
+          "config": {
+            "label": "url",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "Vimeo_Title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "Vimeo_Information": {
+          "type": "Text",
+          "config": {
+            "label": "information",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

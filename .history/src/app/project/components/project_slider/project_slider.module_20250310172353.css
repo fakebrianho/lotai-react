@@ -1,0 +1,10 @@
+.container {
+	width: 66%;
+	height: 100%;
+	border: 2px solid red;
+}
+.container img {
+	max-height: 100%; /* Ensure image doesn't exceed container height */
+
+	object-fit: cover;
+}

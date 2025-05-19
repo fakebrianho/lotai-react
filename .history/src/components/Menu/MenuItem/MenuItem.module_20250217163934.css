@@ -1,0 +1,69 @@
+.menu__item {
+	flex: none;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding: 0 15vw;
+	text-decoration: none;
+	color: pink;
+	outline: none;
+	cursor: pointer;
+	z-index: 101; /* Ensure it's above the background */
+}
+.menu__item::before {
+	counter-increment: menucounter;
+	content: counters(menucounter, '.', decimal-leading-zero);
+	position: absolute;
+	left: calc(15vw - 2rem);
+	color: var(--color-menu-deco);
+	top: 0%;
+	height: 60%;
+	display: flex;
+	align-items: center;
+	line-height: 1;
+	font-weight: bold;
+	opacity: 0;
+	transform: translateX(-1rem);
+	transition:
+		transform 0.3s,
+		opacity 0.3s;
+}
+.menu__itemText {
+	position: relative;
+	z-index: 2; /* Ensure text is above the background image */
+	/* cursor: pointer; */
+	display: block;
+	overflow: hidden;
+	line-height: 1;
+	/* font-size: clamp(2rem, 6vw, 6rem); */
+	font-size: 4vw;
+}
+.menu__item__textInner {
+	position: relative;
+	/* cursor: ; */
+	display: block;
+	overflow: hidden;
+	line-height: 1;
+	/* font-size: clamp(2rem, 6vw, 6rem); */
+	font-size: 4vw;
+}
+.hovered {
+	cursor: pointer;
+}
+
+.menu__itemImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	pointer-events: none;
+	z-index: 0; /* Keep it below interactive elements */
+}
+
+.menu__itemNumber {
+	position: relative;
+	z-index: 2; /* Ensure text is above the background image */
+}

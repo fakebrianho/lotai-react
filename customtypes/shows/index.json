@@ -1,0 +1,25 @@
+{
+  "format": "custom",
+  "id": "shows",
+  "label": "Shows",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "media_embed": {
+              "type": "SharedSlice"
+            },
+            "project_header": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

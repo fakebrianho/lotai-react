@@ -1,0 +1,26 @@
+{
+  "id": "biography_block",
+  "type": "SharedSlice",
+  "name": "BiographyBlock",
+  "description": "BiographyBlock",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "biographyblock": {
+          "type": "Text",
+          "config": {
+            "label": "BiographyBlock",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

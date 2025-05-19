@@ -1,0 +1,26 @@
+{
+  "id": "bio_paragraphs",
+  "type": "SharedSlice",
+  "name": "BioParagraphs",
+  "description": "BioParagraphs",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "biographysection": {
+          "type": "Text",
+          "config": {
+            "label": "BiographySection",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

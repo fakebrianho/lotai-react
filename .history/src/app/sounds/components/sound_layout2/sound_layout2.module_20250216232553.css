@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	width: 100vw;
+	/* border: 2px solid red; */
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	font-family: textfont;
+}
+.left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
+	height: 100%;
+	/* border: 2px solid blue; */
+	flex-direction: column;
+}
+.right {
+	width: 50vw;
+}
+.left img{
+    position: relative;
+}
+#

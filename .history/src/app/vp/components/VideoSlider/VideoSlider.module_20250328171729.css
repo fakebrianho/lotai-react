@@ -1,0 +1,5 @@
+.container img {
+	width: 55vw;
+	height: 65vh;
+	object-fit: contain;
+}

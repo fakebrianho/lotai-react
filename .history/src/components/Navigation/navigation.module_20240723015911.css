@@ -1,0 +1,12 @@
+.bottomDrawer {
+	opacity: 1;
+	position: fixed;
+	height: 50vh;
+	display: flex;
+	width: 100vw;
+	align-items: center;
+	flex-direction: column;
+	background-image: url('/Set2/banner2_Maybe.jpg');
+	background-size: cover;
+	z-index: 4;
+}

@@ -1,0 +1,27 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"header": {
+				"__TYPE__": "FieldContent",
+				"value": "horse",
+				"type": "Text"
+			},
+			"video": {
+				"__TYPE__": "LinkContent",
+				"key": "c47a86bc-fd1a-4f08-86c5-512261f43085",
+				"value": {
+					"__TYPE__": "FileLink",
+					"id": "mock_Media_link",
+					"kind": "file",
+					"name": "mock_name",
+					"url": "https://source.unsplash.com/daily",
+					"size": "0",
+					"text": "claws"
+				}
+			}
+		},
+		"items": []
+	}
+]

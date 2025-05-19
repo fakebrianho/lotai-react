@@ -1,0 +1,36 @@
+.container {
+	margin-bottom: 5rem;
+	display: flex;
+	width: 100vw;
+}
+.imgContainer {
+	width: 65%;
+	padding-left: 2.5rem;
+	padding-top: 2.5rem;
+	overflow: hidden;
+}
+
+.textContainer {
+	width: 35%;
+	padding: 0rem 3rem;
+}
+.bioSection {
+    font-family: 'gara';
+    font-weight: 800;
+    font-size: 52px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+}
+.role {
+	font-family: 'sans';
+	font-weight: 800;
+	font-size: 24px;
+}
+.title {
+	font-family: 'gara';
+	font-weight: 800;
+	font-size: 52px;
+	margin-bottom: 1.5rem;
+	margin-top: 0.5rem;
+}

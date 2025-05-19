@@ -1,0 +1,26 @@
+{
+  "id": "bio",
+  "type": "SharedSlice",
+  "name": "Bio",
+  "description": "Bio",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "biography": {
+          "type": "Text",
+          "config": {
+            "label": "Biography",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

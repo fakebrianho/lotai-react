@@ -1,0 +1,167 @@
+{
+  "id": "sound_layout2",
+  "type": "SharedSlice",
+  "name": "SoundLayout2",
+  "description": "SoundLayout2",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "s_lo2_image_1": {
+          "type": "Image",
+          "config": {
+            "label": "image1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo2_image_2": {
+          "type": "Image",
+          "config": {
+            "label": "Image2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo2_link": {
+          "type": "Link",
+          "config": {
+            "label": "link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "s_lo2_information": {
+          "type": "Text",
+          "config": {
+            "label": "information",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "3Images",
+      "name": "3 Images",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "s_lo2_image_1": {
+          "type": "Image",
+          "config": {
+            "label": "image1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo2_image_2": {
+          "type": "Image",
+          "config": {
+            "label": "Image2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo2_image_3": {
+          "type": "Image",
+          "config": {
+            "label": "Image3",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo2_link": {
+          "type": "Link",
+          "config": {
+            "label": "link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "s_lo2_information": {
+          "type": "Text",
+          "config": {
+            "label": "information",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "4Images",
+      "name": "4 images",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "s_lo2_image_1": {
+          "type": "Image",
+          "config": {
+            "label": "image1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo2_image_2": {
+          "type": "Image",
+          "config": {
+            "label": "Image2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo2_image_3": {
+          "type": "Image",
+          "config": {
+            "label": "Image3",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo2_image_4": {
+          "type": "Image",
+          "config": {
+            "label": "Image4",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo2_link": {
+          "type": "Link",
+          "config": {
+            "label": "link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "s_lo2_information": {
+          "type": "Text",
+          "config": {
+            "label": "information",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "project_page_media",
+  "type": "SharedSlice",
+  "name": "ProjectPageMedia",
+  "description": "ProjectPageMedia",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "context": {
+          "type": "Text",
+          "config": {
+            "label": "context",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Link",
+          "config": {
+            "label": "image",
+            "placeholder": "",
+            "select": "media",
+            "allowText": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

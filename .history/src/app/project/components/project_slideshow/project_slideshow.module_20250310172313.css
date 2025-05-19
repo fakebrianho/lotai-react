@@ -1,0 +1,17 @@
+.container {
+	width: 75vw;
+	height: 100vh;
+	margin: 0 auto;
+	border: 2px solid lightgrey;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slide {
+	border: 2px solid blue;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,26 @@
+{
+  "id": "awards",
+  "type": "SharedSlice",
+  "name": "Awards",
+  "description": "Awards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "awardhonor": {
+          "type": "Text",
+          "config": {
+            "label": "AwardHonor",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

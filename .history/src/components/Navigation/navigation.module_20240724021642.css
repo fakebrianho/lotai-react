@@ -1,0 +1,27 @@
+.bottomDrawer {
+	opacity: 1;
+	/* position: fixed; */
+	height: 50vh;
+	display: flex;
+	width: 100vw;
+	align-items: center;
+	flex-direction: column;
+	background-image: url('/Navigation/bottom.jpg');
+	background-size: cover;
+	z-index: 4;
+}
+.topDrawer {
+	opacity: 1;
+	position: fixed;
+	/* top: 50vh; */
+	/* background-image: url('/Set2/banner2_Maybe.jpg'); */
+	background-image: url('/Navigation/top.jpg');
+	background-size: cover;
+	/* background-position: 0%; */
+	display: flex;
+	justify-content: space-around;
+	height: 50vh;
+	width: 100vw;
+	align-items: center;
+	z-index: 4;
+}

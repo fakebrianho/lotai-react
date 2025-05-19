@@ -1,0 +1,16 @@
+{
+  "id": "project_image_layout9",
+  "type": "SharedSlice",
+  "name": "ProjectImageLayout9",
+  "description": "ProjectImageLayout9",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "hero_slice",
+  "type": "SharedSlice",
+  "name": "HeroSlice",
+  "description": "HeroSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "manifesto_hero_image": {
+          "type": "Image",
+          "config": {
+            "label": "Manifesto Hero Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "manifesto_hero_quote": {
+          "type": "Text",
+          "config": {
+            "label": "Manifesto Hero Quote",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

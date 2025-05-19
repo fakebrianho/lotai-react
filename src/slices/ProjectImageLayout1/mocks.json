@@ -1,0 +1,27 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"context": {
+				"__TYPE__": "FieldContent",
+				"value": "money",
+				"type": "Text"
+			},
+			"video": {
+				"__TYPE__": "LinkContent",
+				"key": "05e62009-38a9-48cd-9c6e-6edfef97f8cc",
+				"value": {
+					"__TYPE__": "FileLink",
+					"id": "mock_Media_link",
+					"kind": "file",
+					"name": "mock_name",
+					"url": "https://source.unsplash.com/daily",
+					"size": "0",
+					"text": "warm"
+				}
+			}
+		},
+		"items": []
+	}
+]

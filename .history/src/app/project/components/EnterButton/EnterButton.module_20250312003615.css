@@ -1,0 +1,8 @@
+.btn {
+	margin-top: 2em;
+	align-self: flex-start;
+	margin-bottom: 20px;
+}
+.btn:last-child {
+	margin-bottom: 0px;
+}

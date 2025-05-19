@@ -1,0 +1,118 @@
+import React, { useRef, useEffect } from 'react'
+import styles from './sound_layout2.module.css'
+import gsap from 'gsap'
+
+function sound_layout2(props) {
+	let images = []
+	if (props?.slice?.primary) {
+		images = Object.entries(props.slice.primary)
+			.filter(
+				([key, value]) => key.startsWith('s_lo2_image_') && value.url
+			)
+			.map(([key, value]) => value)
+	}
+	let cellCount = images.length
+	let selectedIndex = 0
+	var cellWidth = 200 // Example width, adjust as needed
+	var cellHeight = 200 // Example height, adjust as needed
+	var isHorizontal = true
+	var rotateFn = 'rotateY'
+
+	var radius = Math.round(cellWidth / 2 / Math.tan(Math.PI / cellCount))
+	var theta = 360 / cellCount
+
+	const imageRefs = useRef([])
+	const carouselRef = useRef(null)
+
+	useEffect(() => {
+		// Ensure the refs are populated before the first rotation
+		rotateCarousel()
+	}, [images])
+
+	function rotateCarousel() {
+		imageRefs.current.forEach((imgRef, index) => {
+			if (imgRef) {
+				gsap.to(imgRef, {
+					opacity: index === selectedIndex ? 1 : 0,
+					duration: 1,
+				})
+			}
+		})
+
+		if (carouselRef.current) {
+			const angle = theta * selectedIndex * -1
+			carouselRef.current.style.transform =
+				'translateZ(' +
+				-radius +
+				'px) ' +
+				rotateFn +
+				'(' +
+				angle +
+				'deg)'
+		}
+	}
+
+	const carouselClass = `${styles.carouselContainer} ${
+		styles[`carouselContainer--${cellCount}`] || ''
+	}`
+
+	return (
+		<section className={styles.container}>
+			<div
+				className={
+					images.length === 2 || 4 ? styles.left : styles.right
+				}
+			>
+				{images.map((image, index) => (
+					<img
+						key={index}
+						ref={(el) => (imageRefs.current[index] = el)}
+						className={`${styles.image} ${styles[`image${index}`]}`}
+						src={image.url}
+						alt={image.alt || `Image ${index + 1}`}
+					/>
+				))}
+			</div>
+			<div
+				className={
+					images.length === 2 || 4 ? styles.right : styles.left
+				}
+			>
+				<div className={styles.text}>
+					<p>{props?.slice?.primary?.s_lo2_information}</p>
+				</div>
+				<div className={carouselClass}>
+					<div className={styles.carousel} ref={carouselRef}>
+						{images.map((image, index) => (
+							<div className={styles.carousel__cell} key={index}>
+								<img src={image.url} alt='' />
+							</div>
+						))}
+					</div>
+				</div>
+				<div className={styles.carouselNav}>
+					<img
+						className={styles.previousButton}
+						src='./larrowq.png'
+						onClick={() => {
+							selectedIndex =
+								(selectedIndex - 1 + images.length) %
+								images.length
+							rotateCarousel()
+						}}
+					></img>
+					<img
+						className={styles.nextButton}
+						onClick={() => {
+							selectedIndex = (selectedIndex + 1) % images.length
+							rotateCarousel()
+						}}
+						src='./rarrow.png'
+					></img>
+				</div>
+			</div>
+		</section>
+	)
+}
+
+export default sound_layout2

@@ -1,0 +1,9 @@
+.card__wrapper {
+	perspective: 600px;
+}
+.card__3d {
+	transform: rotateY(var(--r-x)) rotateX(var(--r-y));
+	position: absolute;
+	inset: 0;
+	transition: transform 0.5s ease-out;
+}

@@ -1,0 +1,16 @@
+{
+  "id": "video_page_layout1",
+  "type": "SharedSlice",
+  "name": "VideoPageLayout1",
+  "description": "VideoPageLayout1",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

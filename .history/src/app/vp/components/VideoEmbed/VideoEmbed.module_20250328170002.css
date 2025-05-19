@@ -1,0 +1,21 @@
+.container {
+	width: 100vw;
+	height: 100vh;
+	/* border: 2px solid orange; */
+	display: flex;
+	/* justify-content: center; */
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	align-items: center;
+	flex-direction: column;
+}
+.container iframe {
+	margin-top: 5rem;
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	width: 75%;
+	height: 75%;
+	border: 0;
+}

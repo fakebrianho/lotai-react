@@ -1,0 +1,21 @@
+import styles from './EnterButton.module.css'
+function EnterButton(props) {
+	console.log(props)
+	return (
+		<div className={styles.btn}>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<span className={styles.btnSpan}>Enter</span>
+		</div>
+	)
+}
+
+export default EnterButton

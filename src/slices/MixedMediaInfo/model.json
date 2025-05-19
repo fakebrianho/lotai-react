@@ -1,0 +1,48 @@
+{
+  "id": "mixed_media_info",
+  "type": "SharedSlice",
+  "name": "MixedMediaInfo",
+  "description": "MixedMediaInfo",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "MixedMediaImage1": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "MixedMediaURL": {
+          "type": "Text",
+          "config": {
+            "label": "url",
+            "placeholder": ""
+          }
+        },
+        "MixedMediaTitle": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "MixedMediaSubtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

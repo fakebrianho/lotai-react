@@ -1,0 +1,14 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"biographyblock": {
+				"__TYPE__": "FieldContent",
+				"value": "dirt",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

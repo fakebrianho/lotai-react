@@ -1,0 +1,14 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"biographysection": {
+				"__TYPE__": "FieldContent",
+				"value": "be",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

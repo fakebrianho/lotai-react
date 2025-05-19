@@ -1,0 +1,39 @@
+.container {
+	width: 80vw;
+	margin: 0 auto;
+	margin-top: 8rem;
+}
+.container h1 {
+	width: 75vw;
+	margin: 0 auto;
+	font-family: var(--font-text);
+	font-size: 1.5em;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+.imageOne {
+	object-fit: contain;
+	width: 30%;
+	height: max-content;
+	border-radius: 5px;
+}
+.imageTwo {
+	object-fit: cover;
+	height: max-content;
+	width: 30%;
+	border-radius: 5px;
+}
+.layout {
+	display: flex;
+	margin-top: 3rem;
+	justify-content: space-between;
+	position: relative;
+	gap: 3.3%;
+}
+.context {
+	width: 30%;
+	height: max-content;
+	align-self: flex-end;
+	/* position:; */
+	text-align: end;
+}

@@ -1,0 +1,26 @@
+{
+  "id": "afdsf",
+  "type": "SharedSlice",
+  "name": "Afdsf",
+  "description": "Afdsf",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "iasd": {
+          "type": "Embed",
+          "config": {
+            "label": "iasd",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "contact_info",
+  "type": "SharedSlice",
+  "name": "ContactInfo",
+  "description": "ContactInfo",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "Contact_Email1": {
+          "type": "Text",
+          "config": {
+            "label": "email",
+            "placeholder": ""
+          }
+        },
+        "Contact_Email2": {
+          "type": "Text",
+          "config": {
+            "label": "email2",
+            "placeholder": ""
+          }
+        },
+        "Contact_BookingNA": {
+          "type": "Text",
+          "config": {
+            "label": "bookingNA",
+            "placeholder": ""
+          }
+        },
+        "Contact_BookingEU": {
+          "type": "Text",
+          "config": {
+            "label": "bookingEU",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sound_layout5",
+  "type": "SharedSlice",
+  "name": "SoundLayout5",
+  "description": "SoundLayout5",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "s_lo5_image_1": {
+          "type": "Image",
+          "config": {
+            "label": "hero",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo5_information": {
+          "type": "Text",
+          "config": {
+            "label": "information",
+            "placeholder": ""
+          }
+        },
+        "s_lo5_link": {
+          "type": "Link",
+          "config": {
+            "label": "link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

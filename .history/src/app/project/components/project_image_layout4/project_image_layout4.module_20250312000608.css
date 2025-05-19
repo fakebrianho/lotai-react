@@ -1,0 +1,13 @@
+.container {
+	width: 75vw;
+	height: 65vh;
+	display: flex;
+	justify-content: space-between;
+}
+.container img:nth-child(1) {
+	border: 1px solid grey;
+	border-radius: 15px;
+	width: 58.5%;
+	height: 100%;
+	object-fit: cover;
+}

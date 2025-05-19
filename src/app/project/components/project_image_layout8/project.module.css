@@ -1,0 +1,14 @@
+.container {
+	width: 75vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2%;
+}
+.container img {
+	width: 48%;
+	height: 50vh;
+	object-fit: cover;
+	border-radius: 14px;
+}

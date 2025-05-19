@@ -1,0 +1,14 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"awardhonor": {
+				"__TYPE__": "FieldContent",
+				"value": "bar",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

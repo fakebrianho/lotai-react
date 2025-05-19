@@ -1,0 +1,68 @@
+{
+  "id": "sound_layout1",
+  "type": "SharedSlice",
+  "name": "SoundLayout1",
+  "description": "SoundLayout1",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "s_lo1_image_1": {
+          "type": "Image",
+          "config": {
+            "label": "image-1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo1_image_2": {
+          "type": "Image",
+          "config": {
+            "label": "image-2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo1_image_3": {
+          "type": "Image",
+          "config": {
+            "label": "image-3",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "s_lo1_title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "s_lo1_information": {
+          "type": "Text",
+          "config": {
+            "label": "Information",
+            "placeholder": ""
+          }
+        },
+        "s_lo1_link": {
+          "type": "Link",
+          "config": {
+            "label": "Listen",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"vimeoURL": {
+				"key": "05e8c14d-c1ed-42b0-9401-7230d849b9d3",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"text": "frozen"
+				}
+			},
+			"Vimeo_Title": {
+				"__TYPE__": "FieldContent",
+				"value": "field",
+				"type": "Text"
+			},
+			"Vimeo_Information": {
+				"__TYPE__": "FieldContent",
+				"value": "even",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

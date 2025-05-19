@@ -1,0 +1,17 @@
+.container {
+	width: 80dvw;
+	margin: auto;
+	flex-direction: column;
+	display: flex;
+	width: 100vw;
+	/* border: 2px solid red; */
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	font-family: textfont;
+}
+.container iframe {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}

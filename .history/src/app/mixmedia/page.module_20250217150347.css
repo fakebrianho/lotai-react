@@ -1,0 +1,10 @@
+.container {
+	position: relative;
+	overflow: hidden;
+	/* min-height: 100vh; */
+	/* overflow-y: auto; */
+	box-sizing: border-box;
+	width: 100vw;
+
+	border: 20px solid blue;
+}

@@ -1,0 +1,35 @@
+{
+  "id": "project_image_layout2",
+  "type": "SharedSlice",
+  "name": "ProjectImageLayout2",
+  "description": "ProjectImageLayout2",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "video": {
+          "type": "Link",
+          "config": {
+            "label": "video",
+            "placeholder": "",
+            "select": "media",
+            "allowText": true
+          }
+        },
+        "context": {
+          "type": "Text",
+          "config": {
+            "label": "context",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

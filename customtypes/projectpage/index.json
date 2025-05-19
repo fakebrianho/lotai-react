@@ -1,0 +1,88 @@
+{
+  "format": "custom",
+  "id": "projectpage",
+  "label": "ProjectPage",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "project_image_layout10": {
+              "type": "SharedSlice"
+            },
+            "project_image_layout8": {
+              "type": "SharedSlice"
+            },
+            "project_image_layout7": {
+              "type": "SharedSlice"
+            },
+            "project_image_layout6": {
+              "type": "SharedSlice"
+            },
+            "project_image_layout5": {
+              "type": "SharedSlice"
+            },
+            "enter_button": {
+              "type": "SharedSlice"
+            },
+            "project_image_layout4": {
+              "type": "SharedSlice"
+            },
+            "media_embed": {
+              "type": "SharedSlice"
+            },
+            "project_page_media": {
+              "type": "SharedSlice"
+            },
+            "project_image_layout3": {
+              "type": "SharedSlice"
+            },
+            "slider_image": {
+              "type": "SharedSlice"
+            },
+            "project_triple_image": {
+              "type": "SharedSlice"
+            },
+            "project_video": {
+              "type": "SharedSlice"
+            },
+            "project_image_layout2": {
+              "type": "SharedSlice"
+            },
+            "project_layout2": {
+              "type": "SharedSlice"
+            },
+            "project_header": {
+              "type": "SharedSlice"
+            },
+            "project_image_layout1": {
+              "type": "SharedSlice"
+            },
+            "project_image": {
+              "type": "SharedSlice"
+            },
+            "project_paragraph": {
+              "type": "SharedSlice"
+            },
+            "project_header_info": {
+              "type": "SharedSlice"
+            },
+            "project_layout1": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

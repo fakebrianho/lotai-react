@@ -1,0 +1,22 @@
+{
+  "format": "custom",
+  "id": "mixedmedia",
+  "label": "MixedMedia",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "mixed_media_info": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

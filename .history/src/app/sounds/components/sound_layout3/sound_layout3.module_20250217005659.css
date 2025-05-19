@@ -1,0 +1,13 @@
+.container {
+	flex-direction: column;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25em;
+	height: max-content;
+	margin-bottom: 10em;
+	padding-bottom: 10em;
+}
+.heroImage {
+	width: 100%;
+}

@@ -1,0 +1,26 @@
+{
+  "id": "project_layout1",
+  "type": "SharedSlice",
+  "name": "ProjectLayout1",
+  "description": "ProjectLayout1",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "header": {
+          "type": "Text",
+          "config": {
+            "label": "Header",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

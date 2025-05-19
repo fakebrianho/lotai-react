@@ -1,0 +1,26 @@
+{
+  "id": "project_header",
+  "type": "SharedSlice",
+  "name": "ProjectHeader",
+  "description": "ProjectHeader",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "header": {
+          "type": "Text",
+          "config": {
+            "label": "header",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

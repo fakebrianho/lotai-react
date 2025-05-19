@@ -1,0 +1,27 @@
+.bottomDrawer {
+	opacity: 1;
+	/* position: fixed; */
+	border: 2px solid red;
+	height: 50vh;
+	display: flex;
+	width: 100vw;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1em;
+	/* flex-direction: column; */
+	background-image: url('/Navigation/bottom.jpg');
+	background-size: cover;
+	z-index: 4;
+}
+.topDrawer {
+	opacity: 1;
+	position: fixed;
+	background-image: url('/Navigation/top.jpg');
+	background-size: cover;
+	display: flex;
+	justify-content: space-around;
+	height: 50vh;
+	width: 100vw;
+	align-items: center;
+	z-index: 4;
+}
