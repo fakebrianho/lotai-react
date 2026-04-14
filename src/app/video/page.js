@@ -16,6 +16,7 @@ export default function Video() {
 		video: true,
 	}))
 	if (isLoading) {
+		console.log('men', menuItems)
 		return <div>Loading...</div>
 	}
 

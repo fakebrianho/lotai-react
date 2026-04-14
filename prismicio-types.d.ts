@@ -371,48 +371,6 @@ export type AllDocumentTypes =
   | VideopageDocument;
 
 /**
- * Primary content in *Afdsf → Default → Primary*
- */
-export interface AfdsfSliceDefaultPrimary {
-  /**
-   * iasd field in *Afdsf → Default → Primary*
-   *
-   * - **Field Type**: Embed
-   * - **Placeholder**: *None*
-   * - **API ID Path**: afdsf.default.primary.iasd
-   * - **Documentation**: https://prismic.io/docs/field#embed
-   */
-  iasd: prismic.EmbedField;
-}
-
-/**
- * Default variation for Afdsf Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type AfdsfSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<AfdsfSliceDefaultPrimary>,
-  never
->;
-
-/**
- * Slice variation for *Afdsf*
- */
-type AfdsfSliceVariation = AfdsfSliceDefault;
-
-/**
- * Afdsf Shared Slice
- *
- * - **API ID**: `afdsf`
- * - **Description**: Afdsf
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type AfdsfSlice = prismic.SharedSlice<"afdsf", AfdsfSliceVariation>;
-
-/**
  * Primary content in *Awards → Default → Primary*
  */
 export interface AwardsSliceDefaultPrimary {
@@ -3457,10 +3415,6 @@ declare module "@prismicio/client" {
       VideopageDocumentData,
       VideopageDocumentDataSlicesSlice,
       AllDocumentTypes,
-      AfdsfSlice,
-      AfdsfSliceDefaultPrimary,
-      AfdsfSliceVariation,
-      AfdsfSliceDefault,
       AwardsSlice,
       AwardsSliceDefaultPrimary,
       AwardsSliceVariation,

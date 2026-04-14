@@ -7,7 +7,7 @@ export async function generateStaticParams() {
 	const client = createClient('otay')
 	const mixedMedia = await client.getSingle('video')
 	const slices = mixedMedia?.data?.slices || []
-	return slices.map((_, index) => ({ id: `video${index + 1}` }))
+	return slices.map((_, index) => ({ vp: String(index + 1) }))
 }
 
 export default async function ProjectPage({ params }) {

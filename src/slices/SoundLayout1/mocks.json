@@ -83,8 +83,8 @@
 				"type": "Text"
 			},
 			"s_lo1_link": {
-				"__TYPE__": "LinkContent",
 				"key": "31cc0156-db80-4315-add7-7a08ace634b9",
+				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
 					"url": "http://google.com",
