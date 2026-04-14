@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
 	const isVideoPage = pathname.startsWith('/vp/')
 
 	return (
-		<html lang='en'>
+		<html lang='en' className={`${textFont.variable} ${subFont.variable} ${monsterFont.variable} ${scriptFont.variable}`}>
 			<CustomHead />
 
 			<body className={inter.className}>

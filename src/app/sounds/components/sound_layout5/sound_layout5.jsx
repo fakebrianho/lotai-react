@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './sound_layout5.module.css'
 
 function sound_layout5(props) {
-	console.log(props)
+	console.log('pa', props)
 	return (
 		<section className={styles.container}>
 			<div className={styles.left}>

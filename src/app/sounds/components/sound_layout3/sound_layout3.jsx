@@ -6,16 +6,12 @@ function sound_layout3(props) {
 	let images = []
 	if (props?.slice?.primary) {
 		images = Object.entries(props.slice.primary)
-			.filter(
-				([key, value]) => key.startsWith('s_lo3_carousel_') && value.url
-			)
-			.map(([key, value]) => value)
+			.filter(([key, value]) => key.startsWith('s_lo3_carousel_') && value.url)
+			.map(([, value]) => value)
 	}
 	let cellCount = images.length
-	let selectedIndex = 0
+	const selectedIndexRef = useRef(0)
 	var cellWidth = 200 // Example width, adjust as needed
-	var cellHeight = 200 // Example height, adjust as needed
-	var isHorizontal = true
 	var rotateFn = 'rotateY'
 
 	var radius = Math.round(cellWidth / 2 / Math.tan(Math.PI / cellCount))
@@ -30,6 +26,7 @@ function sound_layout3(props) {
 	}, [images])
 
 	function rotateCarousel() {
+		const selectedIndex = selectedIndexRef.current
 		imageRefs.current.forEach((imgRef, index) => {
 			if (imgRef) {
 				gsap.to(imgRef, {
@@ -67,7 +64,7 @@ function sound_layout3(props) {
 				<p
 					className={styles.information}
 					dangerouslySetInnerHTML={{
-						__html: props?.slice?.primary?.s_lo2_information,
+						__html: props?.slice?.primary?.s_lo3_information,
 					}}
 				></p>
 				<h1 className={styles.subheader}>
@@ -93,8 +90,8 @@ function sound_layout3(props) {
 						className={styles.previousButton}
 						src='./larrowq.png'
 						onClick={() => {
-							selectedIndex =
-								(selectedIndex - 1 + images.length) %
+							selectedIndexRef.current =
+								(selectedIndexRef.current - 1 + images.length) %
 								images.length
 							rotateCarousel()
 						}}
@@ -102,7 +99,8 @@ function sound_layout3(props) {
 					<img
 						className={styles.nextButton}
 						onClick={() => {
-							selectedIndex = (selectedIndex + 1) % images.length
+							selectedIndexRef.current =
+								(selectedIndexRef.current + 1) % images.length
 							rotateCarousel()
 						}}
 						src='./rarrow.png'
