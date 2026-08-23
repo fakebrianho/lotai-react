@@ -117,3 +117,18 @@
 .carouselContainer--5 .carousel__cell:nth-child(5) {
 	transform: rotateY(288deg) translateZ(288px);
 }
+
+@media (max-width: 768px) {
+	.container {
+		width: 92vw;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		padding-bottom: 3rem;
+	}
+	.text h1 {
+		font-size: 22px;
+	}
+	.carouselContainer {
+		margin: 50px auto;
+	}
+}

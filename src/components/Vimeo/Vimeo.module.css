@@ -18,3 +18,15 @@
 	background-color: black;
 	border: 0;
 }
+
+@media (max-width: 768px) {
+	.container {
+		/* don't hold the full-viewport height around a small embed */
+		height: auto;
+		margin-top: 2rem;
+		padding: 1.5rem 0;
+	}
+	.container iframe {
+		width: 92%;
+	}
+}

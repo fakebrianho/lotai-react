@@ -37,6 +37,13 @@
 	user-select: none;
 	counter-reset: menucounter;
 }
+@media (max-width: 768px) {
+	.container {
+		padding: 12px;
+		border-width: 10px;
+	}
+}
+
 .menu__item {
 	flex: none;
 	display: flex;

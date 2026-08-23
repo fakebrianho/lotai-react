@@ -67,3 +67,20 @@
 	position: relative;
 	z-index: 2; /* Ensure text is above the background image */
 }
+
+@media (max-width: 768px) {
+	.menu__item {
+		/* rows split 80vh evenly so the full stack always totals 80%
+		   of the screen, leaving headroom for the parallax motion */
+		height: calc(80vh / var(--menu-count, 6));
+		align-items: center;
+		padding: 0 4vw;
+	}
+	.menu__itemText,
+	.menu__item__textInner {
+		/* text scales with the row height, capped so long titles
+		   can't overflow the screen width */
+		font-size: min(calc(80vh / var(--menu-count, 6) * 0.38), 7vw);
+		line-height: 1.15;
+	}
+}

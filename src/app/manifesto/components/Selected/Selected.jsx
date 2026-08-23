@@ -2,7 +2,7 @@ import FullContainer from '@/components/FullContainer/FullContainer'
 function Selected() {
 	return (
 		<FullContainer>
-			<section className='w-[75%] mx-auto'>
+			<section className='w-[75vw] mx-auto'>
 				<div
 					className={`subfont underline underline-offset-[12px] mb-6 text-md`}
 				>
@@ -18,7 +18,7 @@ function Selected() {
 				<h3 className='subfont underline underline-offset-[12px] mb-6 text-md'>
 					Exhibitions
 				</h3>
-				<ul className='w-[75vw] mx-auto mt-6'>
+				<ul className='w-full mt-6'>
 					<li className='textFont text-sm'>
 						2015 May Naked Winger multi-media/interactive solo
 						exhibition, Stovefactory Gallery, Charlestown,
@@ -77,7 +77,7 @@ function Selected() {
 				<h3 className='subfont underline underline-offset-[12px] mb-6  mt-12 text-md'>
 					Shows (Selected)
 				</h3>
-				<ul className='w-[75vw] mx-auto mt-6'>
+				<ul className='w-full mt-6'>
 					<li className='textFont text-sm'>
 						2017 Otay:onii at the Cloud Club, Boston
 					</li>

@@ -7,7 +7,7 @@ function Header(props) {
 		<>
 			<FullContainer centered={true} vertical={true}>
 				<div
-					className={`relative w-[75%] min-h-[50vh] ${styles.headerDiv} flex justify-center items-center`}
+					className={`relative w-[92vw] md:w-[75vw] aspect-video ${styles.headerDiv} flex justify-center items-center`}
 				>
 					<Image
 						src={props.img}
@@ -17,8 +17,8 @@ function Header(props) {
 						className='rounded-[15px]'
 					/>
 				</div>
-				<div className='w-[75%]'>
-					<h1 className='text-white text-2xl font-bold textFont text-center p-10'>
+				<div className='w-[92vw] md:w-[75vw]'>
+					<h1 className='text-white text-base md:text-2xl font-bold textFont text-center py-6 md:p-10'>
 						{props.quote}
 					</h1>
 				</div>

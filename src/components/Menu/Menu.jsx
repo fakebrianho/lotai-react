@@ -79,7 +79,7 @@ export default function Menu({ items }) {
 	}, [])
 
 	return (
-		<nav className='menu'>
+		<nav className='menu' style={{ '--menu-count': items.length }}>
 			{items.map((item, index) => (
 				<MenuItem
 					key={index}
@@ -90,7 +90,7 @@ export default function Menu({ items }) {
 					video={item.video}
 					setTextInnerRef={(el) => setTextInnerRef(el, index)}
 					setMenuItemRef={(el) => setMenuItemRef(el, index)}
-Tt		/>
+				/>
 			))}
 		</nav>
 	)

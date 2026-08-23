@@ -25,3 +25,22 @@
 	max-width: 75%;
 	margin: auto;
 }
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		height: auto;
+		padding: 2rem 0;
+		gap: 1.5rem;
+	}
+	.left,
+	.right {
+		width: 100%;
+	}
+	.left img {
+		width: min(400px, 88vw);
+	}
+	.right p {
+		max-width: 88%;
+	}
+}
