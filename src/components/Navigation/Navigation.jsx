@@ -15,9 +15,7 @@ import { useSearchParams } from 'next/navigation'
 
 export default function Navigation({
 	children,
-	scroll,
 	setScroll,
-	lenis,
 	isOpen = false,
 }) {
 	const [bottomIsOpen, setBottomIsOpen] = useState(isOpen)
@@ -26,33 +24,57 @@ export default function Navigation({
 	const imageRef = useRef(null)
 	const textRef = useRef(null)
 	const searchParams = useSearchParams()
+	const [isMobile, setIsMobile] = useState(false)
+
+	useEffect(() => {
+		const mq = window.matchMedia('(max-width: 768px)')
+		const update = () => setIsMobile(mq.matches)
+		update()
+		mq.addEventListener('change', update)
+		return () => mq.removeEventListener('change', update)
+	}, [])
+
 	useEffect(() => {
 		if (searchParams.get('drawersOpen') === 'true') {
 			setBottomIsOpen(true)
 			setTopIsOpen(true)
-			setScroll(true)
 		}
-		// }, 300) // 300ms delay
 	}, [searchParams])
-
-	const handleBackClick = () => {
-		toggleDrawer()
-	}
 
 	const toggleDrawer = () => {
 		setBottomIsOpen((prevState) => !prevState)
 		setTopIsOpen((prevState) => !prevState)
-		setScroll((prevState) => !prevState)
 	}
 
+	// On first mount only, open the drawers
+	const isMounted = useRef(false)
 	useEffect(() => {
-		toggleDrawer()
+		if (!isMounted.current) {
+			isMounted.current = true
+			setBottomIsOpen(true)
+			setTopIsOpen(true)
+		}
 	}, [pathname])
 
+	// Lock body scroll while nav drawers are open; trigger fader fade when drawers close
 	useEffect(() => {
-		gsap.to(textRef.current, { opacity: 1, duration: 1 })
-		gsap.to(imageRef.current, { opacity: 1, duration: 1 })
-	}, [])
+		document.body.style.overflow = bottomIsOpen ? 'hidden' : ''
+		if (!bottomIsOpen) {
+			setScroll(false)
+		}
+		return () => {
+			document.body.style.overflow = ''
+		}
+	}, [bottomIsOpen])
+
+	useEffect(() => {
+		if (textRef.current) gsap.to(textRef.current, { opacity: 1, duration: 1 })
+		if (imageRef.current) gsap.to(imageRef.current, { opacity: 1, duration: 1 })
+	}, [isMobile])
+
+	const cards = React.Children.map(children, (child) =>
+		React.cloneElement(child, { toggleDrawer })
+	)
 
 	return (
 		<div
@@ -62,11 +84,10 @@ export default function Navigation({
 				left: '0',
 				width: '100vw',
 				height: '100vh',
-				// zIndex: '100',
 			}}
 		>
 			<ArcaneCircleButton
-				onClick={handleBackClick}
+				onClick={toggleDrawer}
 				bottomIsOpen={bottomIsOpen}
 			/>
 			<Drawer
@@ -77,9 +98,7 @@ export default function Navigation({
 				size={'50vh'}
 			>
 				<div className={styles.bottomDrawer}>
-					{React.Children.map(children, (child) =>
-						React.cloneElement(child, { toggleDrawer })
-					)}
+					{isMobile ? cards.slice(3) : cards}
 				</div>
 			</Drawer>
 			<Drawer
@@ -90,19 +109,27 @@ export default function Navigation({
 				size={'50vh'}
 			>
 				<div className={styles.topDrawer}>
-					<img
-						className={'w-[350px] opacity-0'}
-						src='/Logo/logo.png'
-						ref={imageRef}
-					/>
-					<div className='absolute flex w-[55%] justify-around bottom-0 ml-[40px] mb-[35px]'>
-						<h1
-							className={`${myFont.className} text-[rgb(40,44,37)] text-[5.5em] leading-[1.1] tracking-[35px] transform scale-x-[0.5] opacity-0`}
-							ref={textRef}
-						>
-							LANE SHI
-						</h1>
-					</div>
+					{isMobile ? (
+						<div className={styles.topDrawerCards}>
+							{cards.slice(0, 3)}
+						</div>
+					) : (
+						<div className={styles.heroLockup}>
+							<img
+								className={`${styles.heroLogo} opacity-0`}
+								src='/Logo/logo.png'
+								ref={imageRef}
+							/>
+							<div className={styles.heroTextWrap}>
+								<h1
+									className={`${myFont.className} ${styles.heroText} opacity-0`}
+									ref={textRef}
+								>
+									LANE SHI
+								</h1>
+							</div>
+						</div>
+					)}
 				</div>
 			</Drawer>
 		</div>

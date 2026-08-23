@@ -31,9 +31,8 @@ function NavCard({ image, url, toggleDrawer }) {
 	const c1 = useRef(null)
 
 	const handleClick = () => {
-		if (pathname === url) {
-			toggleDrawer()
-		} else {
+		toggleDrawer()
+		if (pathname !== url) {
 			router.push(url)
 		}
 	}
@@ -110,7 +109,7 @@ function NavCard({ image, url, toggleDrawer }) {
 			onMouseMove={(e) => handleMouseMove(e)}
 		>
 			<div
-				className='z-10 w-[172.96px] h-[233.5px] box-border relative'
+				className='z-10 w-[27vw] h-[36.45vw] max-w-[172.96px] max-h-[233.5px] md:w-[172.96px] md:h-[233.5px] box-border relative'
 				data-url='manifesto'
 				onMouseEnter={(e) => handleMouseEnter(e)}
 				onMouseLeave={(e) => handleMouseLeave(e)}

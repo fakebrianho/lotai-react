@@ -25,5 +25,5 @@ button:hover .arcane-circle {
 }
 .open {
 	opacity: 0;
-	display: none;
+	pointer-events: none;
 }

@@ -26,3 +26,55 @@
 	align-items: center;
 	z-index: 4;
 }
+
+/* Logo + name lockup: every dimension is in em off this vw-based
+   font-size (16px at a 1440px viewport), so the whole composition —
+   including how the logo's "y" overlaps the text — scales as one unit. */
+.heroLockup {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 1.1111vw;
+}
+.heroLogo {
+	width: 21.875em; /* 350px @ 1440 */
+}
+.heroTextWrap {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	width: 55%;
+	justify-content: space-around;
+	margin-left: 2.5em; /* 40px @ 1440 */
+	margin-bottom: 2.1875em; /* 35px @ 1440 */
+}
+.heroText {
+	color: rgb(40, 44, 37);
+	font-size: 5.5em;
+	line-height: 1.1;
+	letter-spacing: 0.3977em; /* 35px at an 88px font */
+	transform: scaleX(0.5);
+}
+
+.topDrawerCards {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: flex-end;
+	justify-content: space-evenly;
+	gap: 0.5em;
+	padding: 0 0.5em 1.25em;
+}
+
+@media (max-width: 768px) {
+	.bottomDrawer {
+		gap: 0.5em;
+		padding: 1.25em 0.5em 0;
+		align-items: flex-start;
+		justify-content: space-evenly;
+	}
+}

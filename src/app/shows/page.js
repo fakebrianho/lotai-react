@@ -61,7 +61,7 @@ export default function Shows() {
 	return (
 		<div className={styles.container} ref={containerRef}>
 			{/* <div className={styles.glass}></div> */}
-			<div className={styles.widgetContainer} data-lenis-prevent>
+			<div className={styles.widgetContainer}>
 				<a
 					href='https://www.songkick.com/artists/9684569'
 					className='songkick-widget'

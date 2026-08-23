@@ -2,7 +2,6 @@
 
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { ReactLenis, useLenis } from 'lenis/react'
 import dynamic from 'next/dynamic'
 import NavCard from '@/components/NavCard/NavCard'
 import Fader from '@/components/Fader/Fader'
@@ -40,7 +39,6 @@ const Navigation = dynamic(
 
 export default function RootLayout({ children }) {
 	const [isScrollDisabled, setIsScrollDisabled] = useState(true)
-	const lenis = useLenis()
 	const pathname = usePathname()
 	const isProjectPage = pathname.startsWith('/project/')
 	const isVideoPage = pathname.startsWith('/vp/')
@@ -54,9 +52,7 @@ export default function RootLayout({ children }) {
 					{!isProjectPage && !isVideoPage && (
 						<>
 							<Navigation
-								scroll={isScrollDisabled}
 								setScroll={setIsScrollDisabled}
-								lenis={lenis}
 							>
 								<NavCard
 									image={'/Navigation/manifesto.png'}
@@ -83,11 +79,10 @@ export default function RootLayout({ children }) {
 									url='/contact'
 								/>
 							</Navigation>
-							<Fader scroll={isScrollDisabled} lenis={lenis} />
-							{/* <Fader /> */}
+							<Fader scroll={isScrollDisabled} />
 						</>
 					)}
-					<ReactLenis root>{children}</ReactLenis>
+					{children}
 				</Providers>
 			</body>
 		</html>
