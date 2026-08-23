@@ -95,7 +95,7 @@ export default function Navigation({
 				onClose={toggleDrawer}
 				direction='bottom'
 				duration={1000}
-				size={'50vh'}
+				size={isMobile ? '50dvh' : '50vh'}
 			>
 				<div className={styles.bottomDrawer}>
 					{isMobile ? cards.slice(3) : cards}
@@ -106,7 +106,7 @@ export default function Navigation({
 				onClose={toggleDrawer}
 				direction='top'
 				duration={1000}
-				size={'50vh'}
+				size={isMobile ? '50dvh' : '50vh'}
 			>
 				<div className={styles.topDrawer}>
 					{isMobile ? (

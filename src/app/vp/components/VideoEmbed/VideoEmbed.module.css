@@ -1,20 +1,22 @@
 .container {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	/* justify-content: center; */
 	width: 100%;
-	aspect-ratio: 16 / 9;
-	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 }
 .container iframe {
-	margin-top: 5rem;
-	/* position: absolute; */
-	top: 0;
-	left: 0;
-	width: 75%;
-	height: 75%;
+	/* size by width only and lock the ratio, so the height follows
+	   instead of stretching to the container */
+	width: min(75%, calc(85vh * 16 / 9));
+	aspect-ratio: 16 / 9;
+	height: auto;
 	border: 0;
+}
+
+@media (max-width: 768px) {
+	.container iframe {
+		width: 92%;
+	}
 }

@@ -12,7 +12,9 @@
 	margin-top: 10rem;
 }
 .container iframe {
-	width: 100%;
-	height: 100%;
+	width: min(90%, calc(85vh * 16 / 9));
+	aspect-ratio: 16 / 9;
+	height: auto;
 	background-color: black;
+	border: 0;
 }

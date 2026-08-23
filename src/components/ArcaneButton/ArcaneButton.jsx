@@ -15,7 +15,7 @@ const ArcaneCircleButton = (props) => {
 			onClick={props.onClick}
 		>
 			{test && <Lottie animationData={test} loop />}
-			<p className='absolute text-white text-xl font-bold'>BACK</p>
+			<p className='absolute text-white text-[clamp(11px,1.25vw,18px)] font-bold'>BACK</p>
 		</motion.div>
 	)
 }

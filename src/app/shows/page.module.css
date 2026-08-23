@@ -32,8 +32,19 @@
 }
 .widgetContainer {
 	width: 50%;
-	height: 100vh;
+	/* min-height instead of a fixed height: when the widget is taller than
+	   the viewport, flex-centering inside a fixed 100vh box pushed its top
+	   half off-screen with no way to scroll to it */
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: clamp(90px, 12vh, 160px) 0 60px;
+	box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+	.widgetContainer {
+		width: 92%;
+	}
 }

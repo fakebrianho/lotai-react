@@ -20,8 +20,11 @@ button:hover .arcane-circle {
 }
 .circleButton {
 	z-index: 1000;
-	width: 200px;
-	height: 200px;
+	/* 0.65x the original 200px, scaling down with viewport width on mobile */
+	width: clamp(72px, 9vw, 130px);
+	height: clamp(72px, 9vw, 130px);
+	/* keep it off the top-right corner */
+	margin: clamp(12px, 2vw, 28px);
 }
 .open {
 	opacity: 0;
