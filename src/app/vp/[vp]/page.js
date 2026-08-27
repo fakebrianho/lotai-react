@@ -1,5 +1,5 @@
 import { createClient } from '@prismicio/client'
-import BackButtonNeon from '@/components/BackButtonNeon/BackButtonNeon'
+import BackArrow from '@/components/BackArrow/BackArrow'
 import SliceZone from '@/components/SliceZone/SliceZone'
 import styles from './page.module.css'
 
@@ -21,7 +21,7 @@ export default async function ProjectPage({ params }) {
 
 	return (
 		<div className={styles.container}>
-			<BackButtonNeon url={'video'} />
+			<BackArrow url={'video'} />
 			<SliceZone slices={slices} />
 		</div>
 	)

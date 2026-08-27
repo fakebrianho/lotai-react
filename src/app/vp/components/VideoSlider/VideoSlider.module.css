@@ -3,3 +3,12 @@
 	height: 65vh;
 	object-fit: contain;
 }
+
+@media (max-width: 768px) {
+	.container img {
+		/* height follows the image ratio: the fixed 65vh box was
+		   letterboxing each image, reading as huge gaps in the gallery */
+		width: 92vw;
+		height: auto;
+	}
+}

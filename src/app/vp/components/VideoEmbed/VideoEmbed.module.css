@@ -16,6 +16,12 @@
 }
 
 @media (max-width: 768px) {
+	.container {
+		/* natural height: the full-viewport box left huge empty
+		   space above and below the video on mobile */
+		min-height: 0;
+		padding: 1.5rem 0;
+	}
 	.container iframe {
 		width: 92%;
 	}

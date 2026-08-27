@@ -9,3 +9,25 @@
 	text-decoration: underline;
 	text-underline-offset: 4px;
 }
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 92vw;
+		margin-top: 2.5rem;
+	}
+	.container h1 {
+		font-size: 1.25em;
+	}
+}
+
+@media (max-width: 768px) {
+	/* match project_header_info's mobile container spec */
+	.container {
+		width: 92vw;
+		max-width: 92vw;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.5rem 1rem;
+		box-sizing: border-box;
+	}
+}

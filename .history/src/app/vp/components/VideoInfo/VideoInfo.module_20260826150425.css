@@ -55,8 +55,7 @@
 		margin-bottom: 2rem;
 	}
 	.header {
-		/* extra right inset clears the fixed back arrow in the corner */
-		padding: 0 4.5rem 0 2rem;
+		padding: 0 2rem;
 		margin-top: 1rem;
 	}
 	.imgContainer {

@@ -10,5 +10,10 @@ export default function Sounds() {
 	if (isLoading) {
 		return <div>Loading...</div>
 	}
-	return <SliceZone slices={data?.data?.slices} />
+	// top offset keeps the first slice clear of the fixed back-button lottie
+	return (
+		<div className='pt-[clamp(90px,12vw,150px)]'>
+			<SliceZone slices={data?.data?.slices} />
+		</div>
+	)
 }

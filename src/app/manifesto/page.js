@@ -26,12 +26,12 @@ export default function Manifesto() {
 
 	console.log(data)
 	return (
-		<>
+		<div className='pt-[clamp(90px,12vw,150px)]'>
 			<Header img={$heroImage?.url} quote={$heroQuote} />
 			<Content data={biographySlices} />
 			<Awards />
 			<Gallery />
 			<Selected />
-		</>
+		</div>
 	)
 }

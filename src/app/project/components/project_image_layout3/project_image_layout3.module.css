@@ -28,3 +28,29 @@
 	object-fit: cover;
 	border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+	/* match project_header_info's mobile container spec */
+	.container {
+		width: 92vw;
+		max-width: 92vw;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.5rem 1rem;
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 768px) {
+	.top {
+		margin-top: 1rem;
+	}
+	.bottom {
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+	.bottom img:nth-child(1),
+	.bottom img:nth-child(2) {
+		width: 100%;
+	}
+}

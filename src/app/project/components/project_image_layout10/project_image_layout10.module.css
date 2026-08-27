@@ -1,0 +1,28 @@
+
+@media (max-width: 768px) {
+	.container {
+		/* compact 2-up grid instead of the sparse 5x5 scatter */
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+		margin-top: 2rem;
+	}
+	.pos1,
+	.pos2,
+	.pos3,
+	.pos4,
+	.pos5,
+	.pos6,
+	.pos7,
+	.pos8 {
+		grid-area: auto;
+	}
+	.gridItem {
+		height: 32vw;
+	}
+	.closeButton {
+		top: -44px;
+		right: 0;
+	}
+}
